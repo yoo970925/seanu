@@ -1,0 +1,31 @@
+/* Header 영역 */
+.c-header {
+    background-color: #846ec0;
+}
+
+/* Nav 영역 */
+.c-navbar {
+    width: 200px;
+    background-color: #f2dbff;
+    padding: 15px 0px;
+    text-align: left;
+    position: fixed;
+}
+
+.c-navbarMenu {
+    display: block;
+    color:white;
+    /* margin: 8px; */
+    padding: 10px;
+    text-decoration: none;
+}
+
+.c-navbarMenu:hover {
+    background-color: #846ec0;
+    color: black;
+}
+
+/* content 영역 */
+.c-content {
+    margin-left: 200px;
+}

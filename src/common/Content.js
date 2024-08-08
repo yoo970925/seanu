@@ -1,12 +1,12 @@
 import React from "react";
 import './Common.css';
 
-function Main() {
+function Content() {
     return (
         <div className="c-content">
-            Main;
+            Content;
         </div>
     );
 }
 
-export default Main;
+export default Content;

@@ -1,9 +1,10 @@
 import React from "react";
+import './Common.css';
 
 function Header() {
     return (
-        <div>
-            <h1>Welcome to my website!</h1>
+        <div className='c-header'>
+            헤더 영역
         </div>
     );
 }

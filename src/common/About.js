@@ -1,8 +1,9 @@
 import React from "react";
+import './Common.css';
 
 function About() {
     return (
-        <div>
+        <div className="c-content">
             About;
         </div>
     );
