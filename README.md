@@ -3,8 +3,10 @@
 선우한아 연습용
 
 ## Platforms & Languages
-<img src="https://img.shields.io/badge/NodeJS-F7DF1E?style=flat-square&logo=Node.js&logoColor=white"/>
 <img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=white"/>
+<img src="https://img.shields.io/badge/html5-E34F26?style=flat-square&logo=react&logoColor=white"/>
+<img src="https://img.shields.io/badge/css3-1572B6?style=flat-square&logo=react&logoColor=white"/>
+<img src="https://img.shields.io/badge/github-181717?style=flat-square&logo=react&logoColor=white"/>
 
 ## Tools
 <img src="https://img.shields.io/badge/VisualStudioCode-007ACC?style=flat-square&logo=visualstudiocode&logoColor=white"/>
