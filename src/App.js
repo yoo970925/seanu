@@ -1,21 +1,25 @@
-import './App.css';
+import './common/css/App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Main from './common/Main';
-import About from './common/About';
-import Content from './common/Content';
-import Header from './common/Header';
-import Nav from './common/Nav';
+import Main from './common/view/Main';
+import Login from './common/view/Login';
+import SingUp from './common/view/SingUp';
+import Notice1 from './common/view/notice1';
+import Notice2 from './common/view/notice2';
+import Header from './common/view/Header';
+import Nav from './common/view/Nav';
 
 function App() {
   return (
     <BrowserRouter>
     <div className='App'>
-      <Header />
       <Nav />
+      <Header />
       <Routes>
         <Route path="/" element={<Main />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/content" element={<Content />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/singup" element={<SingUp />} />
+        <Route path="/notice1" element={<Notice1 />} />
+        <Route path="/notice2" element={<Notice2 />} />
       </Routes>
     </div>
     </BrowserRouter>
