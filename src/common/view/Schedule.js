@@ -1,12 +1,12 @@
 import React from "react";
 import '../css/Common.css';
 
-function Notice1() {
+function Schedule() {
     return (
         <div className="c-content">
-            최근 게시글
+            일정
         </div>
     );
 }
 
-export default Notice1;
+export default Schedule;

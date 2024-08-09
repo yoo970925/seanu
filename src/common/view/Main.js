@@ -14,11 +14,11 @@ function Main() {
             <div className="c-container">
                 <div className="c-group-2">
                     <div className="g-title">
-                        <text className="c-title">최근 게시글</text>
-                        <Link to="/content" className="btn-link">+</Link>
+                        <text className="c-title">일정</text>
+                        <Link to="/schedule" className="btn-link">+</Link>
                     </div>
                     <div className="g-container">
-                        <div className="g-header">
+                        <div className={`g-header s-bg-001`}>
                             <div class="g-col">순번</div>
                             <div class="g-col">제목</div>
                             <div class="g-col">작성자</div>
@@ -46,7 +46,7 @@ function Main() {
                         <Link to="/content" className="btn-link">+</Link>
                     </div>
                     <div className="g-container">
-                        <div className="g-header">
+                        <div className={`g-header s-bg-001`}>
                             <div class="g-col">순번</div>
                             <div class="g-col">제목</div>
                             <div class="g-col">작성자</div>
