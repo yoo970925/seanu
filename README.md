@@ -4,7 +4,7 @@
 
 ## Platforms & Languages
 <img src="https://img.shields.io/badge/NodeJS-F7DF1E?style=flat-square&logo=Node.js&logoColor=white"/>
-<img src="https://img.shields.io/badge/NodeJS-F7DF1E?style=flat-square&logo=react&logoColor=white"/>
+<img src="https://img.shields.io/badge/React-#61DAFB?style=flat-square&logo=react&logoColor=white"/>
 
 ## Tools
 <img src="https://img.shields.io/badge/VisualStudioCode-007ACC?style=flat-square&logo=visualstudiocode&logoColor=white"/>
