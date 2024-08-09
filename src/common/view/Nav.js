@@ -4,7 +4,7 @@ import '../css/Common.css';
 
 function Nav () {
     return (
-        <div className='c-navbar'>
+        <div className={`c-navbar s-bg-100`}>
             <Link className="c-navbarMenu" to={'/'}>메인</Link>
             <Link className="c-navbarMenu" to={'/login'}>로그인</Link>
             <Link className="c-navbarMenu" to={'/notice1'}>최근 게시글</Link>

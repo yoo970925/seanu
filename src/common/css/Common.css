@@ -15,7 +15,6 @@
 .c-navbar {
     width: 200px;
     height: 100%;
-    background-color: #C8ACD6;
     padding: 15px 0px;
     text-align: left;
     position: fixed;
@@ -43,7 +42,6 @@
 .c-image {
     border: 5px solid #433D8B;
     border-radius: 10px;
-    background-color: #ffffff;
     max-width: 300px;
     max-height: 300px;
 }
@@ -55,7 +53,6 @@
     margin: 100px auto 100px auto;
     padding: 100px 10px 0px 10px;
     border-radius: 1rem;
-    background-color: #F6F5F5;
 }
 
 /* c-container 영역 */
@@ -111,15 +108,14 @@
 .g-header {
     display: grid;
     grid-template-columns: 80px auto 150px;
-    background-color: #F6F5F5;
 }
 .g-row {
     display: grid;
     grid-template-columns: 80px auto 150px;
-    background-color: #ffffff;
 }
+
 .g-col {
-    border: 1px solid #cec7d4;
+    border: 1px solid #cfcfcf;
     text-align: left;
     padding: 10px;
     align-items: center;
@@ -139,9 +135,8 @@
     width: 70%;
     height: 30px;
     margin: 0px auto 0px auto;
-    border: 2px solid #6f6ba1;
+    border: none;
     border-radius: 5px;
-    background-color: #6f6ba1;
     color: #ffffff;
     font-family: "Ownglyph_UNZ-Rg";
     font-size: 20px;
@@ -154,6 +149,17 @@
     width:70%;
     height: 50%;
     margin: 0px auto 0px auto;
-    border: 2px solid #dddddd;
+    border: 2px solid #cfcfcf;
     border-radius: 5px;
 }
+
+/* backgroup-Color */
+.s-bg-000 { background-color: #ffffff; }
+.s-bg-001 { background-color: #e7e7e7; }
+.s-bg-002 { background-color: #cfcfcf; }
+/* 보라 */
+.s-bg-100 { background-color: #C8ACD6; }
+.s-bg-101 { background-color: #6f6ba1; }
+.s-bg-102 { background-color: #433D8B; }
+.s-bg-103 { background-color: #2E236C; }
+.s-bg-104 { background-color: #17153B; }
