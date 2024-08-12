@@ -1,12 +1,12 @@
 import React from "react";
 import '../css/Common.css';
 
-function Notice2() {
+function Notice() {
     return (
         <div className="c-content">
-            인기 게시글
+            게시판
         </div>
     );
 }
 
-export default Notice2;
+export default Notice;

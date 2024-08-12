@@ -8,7 +8,7 @@ function Nav () {
             <Link className="c-navbarMenu" to={'/'}>메인</Link>
             <Link className="c-navbarMenu" to={'/login'}>로그인</Link>
             <Link className="c-navbarMenu" to={'/schedule'}>일정</Link>
-            <Link className="c-navbarMenu" to={'/notice2'}>인기 게시글</Link>
+            <Link className="c-navbarMenu" to={'/notice'}>게시판</Link>
         </div>
     )
 }
