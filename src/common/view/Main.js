@@ -6,27 +6,7 @@ import '../css/Common.css';
 function Main() {    
     return (
         <div className="c-content">
-            <div className={`g-container g-h40`}>
-                <div className={`g-group`}>
-                    <div className="c-title">
-                        타이틀
-                    </div>
-                </div>
-            </div>
-            <div className={`g-container g-h40`}>
-                <div className={`g-group`}>
-                    <div className="c-title">
-                        타이틀
-                    </div>
-                </div>
-            </div>
-            <div className={`g-container g-h40`}>
-                <div className={`g-group`}>
-                    <div className="c-title">
-                        타이틀
-                    </div>
-                </div>
-            </div>
+            
         </div>
     );
 }

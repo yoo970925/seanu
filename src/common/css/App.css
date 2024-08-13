@@ -3,7 +3,7 @@
   .App {
     height: 100%;
     display: grid;
-    grid-gap: 10px;
+    /* grid-gap:10px; */
     grid-template-columns: 200px auto;
     grid-template-rows: 150px auto;
     grid-template-areas:
