@@ -1,7 +1,21 @@
-import React from "react";
+import React, { useEffect, useState }from "react";
 import '../css/Common.css';
+import axios from 'axios';
 
 function Notice() {
+    const [items, setItems] = useState([]);
+
+    useEffect(() => {
+        // 서버에서 데이터 가져오기
+        axios.get('http://localhost:5000/notice')
+        .then(response => {
+            setItems(response.data);
+        })
+        .catch(error => {
+            console.error('데이터 가져오기 오류:', error);
+        });
+    }, []);
+
     return (
         <div className="c-content">
             <div className={`g-container`}>
@@ -13,17 +27,19 @@ function Notice() {
                         <table>
                             <thead className="g-header">
                                 <tr className="g-header-row">
-                                    <th className="g-col">Colunm1</th>
-                                    <th className="g-col">Colunm2</th>
+                                    <th className="g-col">이름</th>
+                                    <th className="g-col">가격</th>
                                     <th className="last-col"></th>
                                 </tr>
                             </thead>
                             <tbody className="g-body">
-                                <tr className="g-body-row">
-                                    <td className="g-col">테스트1</td>
-                                    <td className="g-col">테스트2</td>
-                                    <td className="last-col"></td>
-                                </tr>
+                                {items.map(item => {
+                                    <tr className="g-body-row">
+                                        <td className="g-col">{item.name}</td>
+                                        <td className="g-col">{item.price}</td>
+                                        <td className="last-col"></td>
+                                    </tr>
+                                })}
                                 <tr className="g-last-row">
                                     <td className="g-col"></td>
                                     <td className="g-col"></td>

@@ -13,6 +13,19 @@
     background-color: #fff;
     text-align: center;
   }
+
+  /* c-item */
+  .c-item {
+    width: 25%;
+    height: 35px;
+    display: flex;
+    align-items: center;
+  }
+
+  .g-login {
+    margin-left: 300px;
+    margin-right: 300px;
+  }
 }
 
 /* 타블렛 가로 */
@@ -29,6 +42,18 @@
     "sidebar content";
     background-color: #fff;
     text-align: center;
+  }
+
+  .c-item {
+    width: 25%;
+    height: 35px;
+    display: flex;
+    align-items: center;
+  }
+
+  .g-login {
+    margin-left: 200px;
+    margin-right: 200px;
   }
 }
 
@@ -47,6 +72,18 @@
     background-color: #fff;
     text-align: center;
   }
+
+  .c-item {
+    width: 50%;
+    height: 35px;
+    display: flex;
+    align-items: center;
+  }
+
+  .g-login {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
 }
 
 /* 모바일 세로 */
@@ -63,5 +100,17 @@
     "content";
     background-color: #fff;
     text-align: center;
+  }
+
+  .c-item {
+    width: 100%;
+    height: 35px;
+    display: flex;
+    align-items: center;
+  }
+
+  .g-login {
+    margin-left: 0px;
+    margin-right: 0px;
   }
 }

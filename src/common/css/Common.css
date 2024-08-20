@@ -5,6 +5,7 @@
     font-weight: normal;
     font-style: normal;
 } */
+
 @font-face {
     font-family: 'LeeSeoyun';
     src: url("../font/이서윤체.ttf") format("truetype");
@@ -63,12 +64,18 @@
 }
 
 .g-group {
+    margin-top: 10px;
     width: 100%;
     flex: 1;
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
-    /* border: 3px solid orange; */
+}
+
+.g-login {
+    display: flex;
+    justify-content: center;
+    background-color: #e7e7e7;
 }
 
 /* width 영역 */
@@ -85,7 +92,7 @@
 /* backgroup-Color */
 .s-bg-000 { background-color: #ffffff; }
 .s-bg-001 { background-color: #e7e7e7; }
-.s-bg-002 { background-color: #cfcfcf; }
+.s-bg-002 { background-color: hsl(0, 0%, 81%); }
 /* 보라 */
 .s-bg-100 { background-color: #C8ACD6; }
 .s-bg-101 { background-color: #6f6ba1; }
@@ -127,3 +134,30 @@ td { border: 1px solid rgba(0,0,0,.1);}
 .g-last-row > td { border: none}
 .g-header-row, .g-body-row { height: 40px; }
 .g-col { width: 120px;}
+
+.c-text {
+    width: 30%;
+    padding-left: 5px;
+    text-align: left;
+}
+
+input {
+    height: 50%;
+    width: 60%;
+    margin: auto;
+    border: none;
+    border-radius: 5px;
+}
+
+.btn { 
+    margin: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: "LeeSeoyun";
+    border: none;
+    border-radius: 3px;
+    background-color: #17153B;
+    color: #ffffff;
+}

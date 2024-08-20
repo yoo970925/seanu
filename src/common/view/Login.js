@@ -16,23 +16,21 @@ function Login() {
     
     return (
         <div className="c-content">
-            <div className={`c-login s-bg-001`}>
-                <img className={`c-image s-bg-000`} src={image1} alt='메인' />
-                <div className="c-item">
-                    <input className="c-input" type="text" placeholder="아이디"></input>
+            <div className="g-group">
+                <div className={`g-login s-bg-100`}>
+                    <img src={image1} alt='로그인' />
                 </div>
-                <div className="c-item">
-                    <input className="c-input" type="password" placeholder="비밀번호"></input>
+                <div className={`g-login s-bg-100`}>
+                    <p className="c-text">로그인</p>
+                    <input type="text"></input>
                 </div>
-                <div className="c-item">
-                    <button className={`btn-login s-bg-102`} onClick={main}>
-                        로그인
-                    </button>
+                <div className={`g-login s-bg-100`}>
+                    <p className="c-text">비밀번호</p>
+                    <input type="text"></input>
                 </div>
-                <div className="c-item">
-                    <button className={`btn-login s-bg-102`} onClick={singUp}>
-                        회원가입
-                    </button>
+                <div className={`g-login s-bg-100`}>
+                    <button className="btn" onClick={main}>로그인</button>
+                    <button className="btn" onClick={singUp}>회원가입</button>
                 </div>
             </div>
         </div>
