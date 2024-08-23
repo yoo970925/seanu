@@ -20,11 +20,7 @@
     height: 35px;
     display: flex;
     align-items: center;
-  }
-
-  .g-login {
-    margin-left: 300px;
-    margin-right: 300px;
+    padding: 5px;
   }
 }
 
@@ -49,11 +45,7 @@
     height: 35px;
     display: flex;
     align-items: center;
-  }
-
-  .g-login {
-    margin-left: 200px;
-    margin-right: 200px;
+    padding: 5px;
   }
 }
 
@@ -78,11 +70,7 @@
     height: 35px;
     display: flex;
     align-items: center;
-  }
-
-  .g-login {
-    margin-left: 100px;
-    margin-right: 100px;
+    padding: 5px;
   }
 }
 
@@ -107,10 +95,6 @@
     height: 35px;
     display: flex;
     align-items: center;
-  }
-
-  .g-login {
-    margin-left: 0px;
-    margin-right: 0px;
+    padding: 5px;
   }
 }

@@ -44,8 +44,6 @@
 
 /* content 영역 */
 .c-content {
-    border: 3px solid #C8ACD6;
-    border-left: 0px solid #C8ACD6;
     overflow: auto;
     display: flex;
     grid-area: content;
@@ -76,11 +74,16 @@
     display: flex;
     justify-content: center;
     background-color: #e7e7e7;
+    padding: 5px;
 }
 
 /* width 영역 */
+.g-w5 { width: 5%; }
+.g-w10 { width: 10%; }
 .g-w25 { width: 25%; }
 .g-w30 { width: 30%; }
+.g-w35 { width: 35%; }
+.g-w40 { width: 40%; }
 .g-w50 { width: 50%; }
 .g-w70 { width: 70%; }
 
@@ -99,6 +102,14 @@
 .s-bg-102 { background-color: #433D8B; }
 .s-bg-103 { background-color: #2E236C; }
 .s-bg-104 { background-color: #17153B; }
+
+/* textColor */
+.s-color-001 {color: red;}
+
+/* text-align */
+.s-text-left { text-align: left; }
+.s-text-center { text-align: center; }
+.s-text-right { text-align: right; }
 
 .c-title {
     height: 20px;
@@ -137,27 +148,91 @@ td { border: 1px solid rgba(0,0,0,.1);}
 
 .c-text {
     width: 30%;
-    padding-left: 5px;
     text-align: left;
 }
 
-input {
-    height: 50%;
-    width: 60%;
-    margin: auto;
-    border: none;
-    border-radius: 5px;
+.g-btn {
+    margin-left: auto;
 }
 
 .btn { 
     margin: 5px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 5px;
     font-family: "LeeSeoyun";
     border: none;
     border-radius: 3px;
     background-color: #17153B;
     color: #ffffff;
+    justify-content: space-between;
+}
+
+form {
+    width: 100%;
+    padding: 50px;
+}
+
+input {
+    height: 25px;
+    width: 70%;
+    float: left;
+    border-radius: 5px;
+    border: none;
+    font-family: 'LeeSeoyun';
+}
+
+select {
+    font-family: 'LeeSeoyun';
+    height: 25px;
+    padding: 0 5px 0 5px;
+    border-radius: 5px;
+}
+
+/* 주의 */
+.s-caution::after {
+    content: "*";
+    color: red;
+}
+
+/* 회원가입 창 */
+.s-group {
+    width: 30%;
+    margin: auto;
+    padding: 50px;
+    border-radius: 10px;
+    background-color: #e7e7e7;
+}
+
+.s-item {
+    align-items: center;
+}
+
+.s-input { width: 100%; }
+
+.s-title {
+    height: 25px;
+    margin: 5px 0 5px 0;
+    text-align: left;
+}
+
+.s-text { 
+    padding: 0 5px 0 5px;
+    height: 25px;
+    width: 50px;
+    margin: 0 5px 0 5px;
+    text-align: left;
+}
+
+.s-email {
+    display: flex;
+}
+
+.s-text-email {
+    margin: 0 5px 0 5px;
+}
+
+.s-select-email, .s-select-birth { width: 100%; }
+
+.s-birth {
+    display: flex;
+    flex: 1 1 auto;
 }
