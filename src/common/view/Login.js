@@ -6,31 +6,47 @@ import '../css/Common.css';
 function Login() {
     const navigate = useNavigate();
 
-    const main = () => {
+    // 로그인
+    const login = () => {
         navigate("/main");
     };
     
+    // 비밀번호 찾기
+    const findPw = () => {
+
+    };
+
+    // 회원가입
     const singUp = () => {
         navigate("/singUp");
     };
     
     return (
         <div className="c-content">
-            <div className="g-group">
-                <div className={`g-login s-bg-100`}>
-                    <img src={image1} alt='로그인' />
+            <div className="s-group">
+                <div className="g-group">
+                    <div className="s-item">
+                        <h1>로그인</h1>
+                    </div>
                 </div>
-                <div className={`g-login s-bg-100`}>
-                    <p className="c-text">로그인</p>
-                    <input type="text"></input>
+                <div className="g-group">
+                    <div className="s-item">
+                        <p className="s-title">아이디</p>
+                        <input type="text" name="userid" placeholder="ID"/>
+                    </div>
                 </div>
-                <div className={`g-login s-bg-100`}>
-                    <p className="c-text">비밀번호</p>
-                    <input type="text"></input>
+                <div className="g-group">
+                    <div className="s-item">
+                        <p className="s-title">비밀번호</p>
+                        <input type="password" name="userpw" placeholder="PASSWORD"/>
+                    </div>
                 </div>
-                <div className={`g-login s-bg-100`}>
-                    <button className="btn" onClick={main}>로그인</button>
-                    <button className="btn" onClick={singUp}>회원가입</button>
+                <div className="g-group">
+                    <div className="s-item">
+                        <button className="btn" onClick={login}>로그인</button>
+                        <button className="btn" onClick={findPw}>비밀번호 찾기</button>
+                        <button className="btn" onClick={singUp}>회원가입</button>
+                    </div>
                 </div>
             </div>
         </div>

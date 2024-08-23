@@ -75,7 +75,7 @@ function SingUp() {
                     <div className="g-group">
                         <div className="s-item">
                             <p className={`s-title s-caution`}>아이디</p>
-                            <input type="text"
+                            <input className="g-w80" type="text"
                                 name="userid"
                                 placeholder="아이디 입력(6~20자)"
                                 value={formData.userid}
@@ -151,58 +151,6 @@ function SingUp() {
                     </div>
                 </div>
             </form>
-            {/* <form onSubmit={C_01}>
-                <div className="g-group">
-                    <div className="c-item">
-                        <p className="c-text">이메일</p>
-                        <input type="email"
-                            name="email"
-                            placeholder="email"
-                            value={formData.email}
-                            onChange={onChange}
-                        />
-                    </div>
-                    <div className="c-item">
-                        {emailChk && <p className={`caution s-color-001`}>{emailChk}</p>}
-                        <div className="g-btn">
-                            <button className="btn">중복확인</button>
-                        </div>
-                    </div>
-                    <div className="c-item">
-                        <p className="c-text">이름</p>
-                        <input type="text"
-                            name="username"
-                            placeholder="username"
-                            value={formData.username}
-                            onChange={onChange}
-                        />
-                    </div>
-                    <div className="c-item">
-                        <p className="c-text">비밀번호</p>
-                        <input type="password"
-                            name="password"
-                            placeholder="password"
-                            value={formData.password}
-                            onChange={onChange}
-                            onBlur={onBlur}
-                        />
-                    </div>
-                    <div className="c-item">
-                        <p className="c-text">비밀번호 확인</p>
-                        <input type="password"
-                            name="confirmPassword"
-                            placeholder="Confirm Password"
-                            value={formData.confirmPassword}
-                            onChange={onChange}
-                            onBlur={onBlur}
-                        />
-                    </div>
-                    <div className="c-item">
-                        {pwChk && <p className={`caution s-color-001`}>{pwChk}</p>}
-                    </div>
-                    <button type="submit" className="btn">회원가입</button>
-                </div>
-            </form> */}
         </div>
     );
 }

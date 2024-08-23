@@ -70,13 +70,6 @@
     box-sizing: border-box;
 }
 
-.g-login {
-    display: flex;
-    justify-content: center;
-    background-color: #e7e7e7;
-    padding: 5px;
-}
-
 /* width 영역 */
 .g-w5 { width: 5%; }
 .g-w10 { width: 10%; }
@@ -86,6 +79,7 @@
 .g-w40 { width: 40%; }
 .g-w50 { width: 50%; }
 .g-w70 { width: 70%; }
+.g-w80 { width: 80%; }
 
 /* height 영역 */
 .g-h40 { height: 40%;}
@@ -173,7 +167,7 @@ form {
 
 input {
     height: 25px;
-    width: 70%;
+    width: 100%;
     float: left;
     border-radius: 5px;
     border: none;
