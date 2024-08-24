@@ -1,6 +1,7 @@
 import React from "react";
 import Logo from '../image/seanuhana.png';
 import '../css/Common.css';
+import '../css/Style.css';
 
 function Header() {
     return (

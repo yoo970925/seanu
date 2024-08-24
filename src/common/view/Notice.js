@@ -1,6 +1,7 @@
 import React, { useEffect, useState }from "react";
-import '../css/Common.css';
 import axios from 'axios';
+import '../css/Common.css';
+import '../css/Style.css';
 
 function Notice() {
     const [items, setItems] = useState([]);

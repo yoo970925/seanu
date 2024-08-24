@@ -1,6 +1,7 @@
 import React, { useState } from "react";
-import '../css/Common.css';
 import BirthDate from "../component/BirthDate";
+import '../css/Common.css';
+import '../css/Style.css';
 
 function SingUp() {
     // 데이터

@@ -1,3 +1,4 @@
+// node server.js
 const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
@@ -23,21 +24,58 @@ app.get('/', (req, res) => {
   res.send('서버가 정상적으로 실행 중입니다.');
 });
 
-// MongoDB 모델 정의
-const Item = mongoose.model('Item', new mongoose.Schema({
-  name: String,
-  price: Number
-}));
-// API 엔드포인트 정의
-app.get('/notice', async (req, res) => {
-  const items = await Item.find();
-  res.json(items);
+// 사용자 모델 정의
+const userSchema = new mongoose.Schema({
+  username : String,
+  userId : String,
+  email: String,
+  userPw : String
 });
 
-app.post('/notice', async (req, res) => {
-  const newItem = new Item(req.body);
-  await newItem.save();
-  res.json(newItem);
+const User = mongoose.model('User', userSchema);
+
+// 회원가입
+app.post('/singUp', async(req, res) => {
+  const { username, email, password } = req.body;
+
+  const user = new User({
+    username,
+    email,
+    password
+  });
+
+  try {
+    await user.save();
+    res.status(201).send('User registered');
+  } catch (err) {
+    res.status(400).send('Error registering user');
+  }
+})
+
+// 로그인
+app.post('/login', async (req, res) => {
+  const { userId, userPw } = req.body;
+
+  try {
+    // 사용자 찾기
+    const user = await User.findOne({ userId });
+    if (!user) {
+      return res.status(400).json({ message: '사용자를 찾을 수 없습니다.' });
+    }
+
+    // 비밀번호 비교
+    const isMatch = await bcrypt.compare(userPw, user.userPw);
+    if (!isMatch) {
+      return res.status(400).json({ message: '비밀번호가 일치하지 않습니다.' });
+    }
+
+    // JWT 토큰 생성
+    const token = jwt.sign({ id: user._id }, 'your_jwt_secret', { expiresIn: '1h' });
+
+    res.json({ token, userId: user._id, username: user.username });
+  } catch (err) {
+    res.status(500).json({ message: '서버 오류' });
+  }
 });
 
 // 서버 실행

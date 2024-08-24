@@ -1,7 +1,6 @@
 import React from "react";
-// import { Link } from "react-router-dom";
 import '../css/Common.css';
-// import mainImage from '../image/main.png';
+import '../css/Style.css';
 
 function Main() {    
     return (

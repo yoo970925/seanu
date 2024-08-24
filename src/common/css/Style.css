@@ -1,0 +1,73 @@
+/* font 영역 */
+/* @font-face {
+    font-family: 'Ownglyph_UNZ-Rg';
+    src: url("../font/온글잎\ 언즈체.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+} */
+
+@font-face {
+    font-family: 'LeeSeoyun';
+    src: url("../font/이서윤체.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* 테마 스타일 */
+/* 퍼플 */
+.puple .sidebar {
+    background-color: #6f6ba1;
+}
+.puple .sidebar ul li:hover {
+    background-color: #433D8B;
+}
+
+/* 다크 */
+.dark .sidebar {
+    background-color: #333;
+}
+
+.dark .sidebar ul li:hover {
+    background-color: #555;
+}
+
+/* width 영역 */
+.g-w5 { width: 5%; }
+.g-w10 { width: 10%; }
+.g-w25 { width: 25%; }
+.g-w30 { width: 30%; }
+.g-w35 { width: 35%; }
+.g-w40 { width: 40%; }
+.g-w50 { width: 50%; }
+.g-w70 { width: 70%; }
+.g-w80 { width: 80%; }
+
+/* height 영역 */
+.g-h40 { height: 40%;}
+.g-h50 { height: 50%;}
+.g-h60 { height: 60%;}
+
+/* backgroup-Color */
+.s-bg-000 { background-color: #ffffff; }
+.s-bg-001 { background-color: #e7e7e7; }
+.s-bg-002 { background-color: hsl(0, 0%, 81%); }
+/* 보라 */
+.s-bg-100 { background-color: #C8ACD6; }
+.s-bg-101 { background-color: #6f6ba1; }
+.s-bg-102 { background-color: #433D8B; }
+.s-bg-103 { background-color: #2E236C; }
+.s-bg-104 { background-color: #17153B; }
+
+/* textColor */
+.s-color-001 {color: red;}
+
+/* text-align */
+.s-text-left { text-align: left; }
+.s-text-center { text-align: center; }
+.s-text-right { text-align: right; }
+
+/* 주의 */
+.s-caution::after {
+    content: "*";
+    color: red;
+}
