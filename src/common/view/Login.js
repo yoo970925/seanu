@@ -52,9 +52,13 @@ function Login() {
     const [error, setError] = useState('');
     const [token, setToken] = useState(null);
 
+    const S_01 = () => {
+
+    };
+    
     return (
         <div className="c-content">
-            <div className="s-group">
+            <form onSubmit={S_01} className="s-group">
                 <div className="g-group">
                     <div className="s-item">
                         <h1>로그인</h1>
@@ -89,7 +93,7 @@ function Login() {
                         <button className="btn" onClick={singUp}>회원가입</button>
                     </div>
                 </div>
-            </div>
+            </form>
         </div>
     );
 }

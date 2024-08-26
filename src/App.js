@@ -1,5 +1,7 @@
-import './common/css/App.css';
+import React, { useState } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
+import './common/css/App.css';
 import Main from './common/view/Main';
 import Login from './common/view/Login';
 import SingUp from './common/view/SingUp';
@@ -9,11 +11,17 @@ import Header from './common/view/Header';
 import Nav from './common/view/Nav';
 
 function App() {
+  const [selectedItem, setSelectedItem] = useState('default');
+
+  const handleSidebarSelection = (theme) => {
+    setSelectedItem(theme);
+  };
+
   return (
     <BrowserRouter>
-    <div className='App'>
+    <div className={`App ${selectedItem }`}>
       <Header />
-      <Nav />
+      <Nav onSelectItem={handleSidebarSelection} />
       <Routes>
         <Route path="/" element={<Main />} />
         <Route path="/login" element={<Login />} />

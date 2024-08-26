@@ -15,10 +15,11 @@
 
 /* 테마 스타일 */
 /* 퍼플 */
-.puple .sidebar {
+.default .sidebar {
     background-color: #6f6ba1;
 }
-.puple .sidebar ul li:hover {
+
+.default .sidebar ul li:hover {
     background-color: #433D8B;
 }
 
@@ -70,4 +71,13 @@
 .s-caution::after {
     content: "*";
     color: red;
+}
+
+/* 버튼 색상 */
+.App.default .btn {
+    background-color: #6f6ba1;
+}
+
+.App.dark .btn {
+    background-color: #333;
 }

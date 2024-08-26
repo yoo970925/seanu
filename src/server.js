@@ -26,9 +26,9 @@ app.get('/', (req, res) => {
 
 // 사용자 모델 정의
 const userSchema = new mongoose.Schema({
+  userid : { type: String, required: true, unique: true },
   username : String,
-  userId : String,
-  email: String,
+  useremail: String,
   userPw : String
 });
 
@@ -50,7 +50,20 @@ app.post('/singUp', async(req, res) => {
   } catch (err) {
     res.status(400).send('Error registering user');
   }
-})
+});
+
+// 아이디 중복체크
+app.get('/userIdChk', async(req, res) => {
+  const { userid } = req.query;
+  
+  try {
+    const user = await User.findOne({ userid });
+    res.json({ exists: !!user });
+  } catch (error) {
+    console.error('아이디 중복 체크 오류:', error);
+    res.status(500).json({ error: '서버 오류 발생' });
+  }
+});
 
 // 로그인
 app.post('/login', async (req, res) => {

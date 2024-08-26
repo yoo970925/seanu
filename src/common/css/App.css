@@ -3,7 +3,6 @@
   .App {
     height: 100%;
     display: grid;
-    /* grid-gap:10px; */
     grid-template-columns: 250px auto;
     grid-template-rows: 150px auto;
     grid-template-areas:
@@ -13,14 +12,20 @@
     background-color: #fff;
     text-align: center;
   }
+  
+  .sidebar.closed {
+    width: 60px;
+  }
 
+  .App:has(.sidebar.closed) {
+    grid-template-columns: 60px auto;
+  }
+  
   /* c-item */
   .c-item {
-    width: 25%;
     height: 35px;
     display: flex;
     align-items: center;
-    padding: 5px;
   }
 }
 
@@ -29,7 +34,6 @@
   .App {
     height: 100%;
     display: grid;
-    grid-gap: 10px;
     grid-template-columns: 200px auto;
     grid-template-rows: 150px auto;
     grid-template-areas:
@@ -40,12 +44,19 @@
     text-align: center;
   }
 
+  /* 메뉴가 접혔을 때 스타일 */
+  .sidebar.closed {
+    width: 60px;
+  }
+
+  .App:has(.sidebar.closed) {
+    grid-template-columns: 60px auto;
+  }
+
   .c-item {
-    width: 25%;
     height: 35px;
     display: flex;
     align-items: center;
-    padding: 5px;
   }
 }
 
@@ -54,23 +65,33 @@
   .App {
     height: 100%;
     display: grid;
-    grid-gap: 10px;
-    grid-template-columns: auto;
-    grid-template-rows: 150px 42px auto;
+    grid-template-columns: 100%;
+    grid-template-rows: 150px 300px auto;
     grid-template-areas:
-    "header"
-    "sidebar"
-    "content";
+    "header header"
+    "sidebar sidebar"
+    "content content";
     background-color: #fff;
     text-align: center;
   }
 
+  .sidebar.closed {
+    width: 100%;
+    max-height: 50px;
+  }
+
+  .sidebar.open {
+    max-height: 300px; /* 적절한 최대 높이 값으로 설정 */
+  }
+
+  .App:has(.sidebar.closed) {
+    grid-template-rows: 150px 50px auto;
+  }
+
   .c-item {
-    width: 50%;
     height: 35px;
     display: flex;
     align-items: center;
-    padding: 5px;
   }
 }
 
@@ -79,22 +100,32 @@
   .App {
     height: 100%;
     display: grid;
-    grid-gap: 10px;
-    grid-template-columns: auto;
-    grid-template-rows: 150px 42px auto;
+    grid-template-columns: 100%;
+    grid-template-rows: 150px 300px auto;
     grid-template-areas:
-    "header"
-    "sidebar"
-    "content";
+    "header header"
+    "sidebar sidebar"
+    "content content";
     background-color: #fff;
     text-align: center;
   }
 
-  .c-item {
+  .sidebar.closed {
     width: 100%;
+    max-height: 50px;
+  }
+
+  .sidebar.open {
+    max-height: 300px; /* 적절한 최대 높이 값으로 설정 */
+  }
+
+  .App:has(.sidebar.closed) {
+    grid-template-rows: 150px 50px auto;
+  }
+
+  .c-item {
     height: 35px;
     display: flex;
     align-items: center;
-    padding: 5px;
   }
 }
