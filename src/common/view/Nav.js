@@ -16,8 +16,8 @@ function Nav ({ onSelectItem }) {
         navigate("/");
     };
 
-    const profile = () => {
-        navigate("/Profile");
+    const myPage = () => {
+        navigate("/MyPage");
     };
 
     const schedule = () => {
@@ -63,7 +63,7 @@ function Nav ({ onSelectItem }) {
             </div>
             <ul>
                 <li onClick={main}>홈</li>
-                <li onClick={profile}>프로필</li>
+                <li onClick={myPage}>마이페이지</li>
                 <li onClick={schedule}>일정</li>
                 <li onClick={notice}>게시판</li>
                 <li onClick={login}>로그인</li>

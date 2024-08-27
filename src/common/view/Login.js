@@ -65,26 +65,28 @@ function Login() {
                     </div>
                 </div>
                 <div className="g-group">
-                    <div className="s-item">
-                        <p className="s-title">아이디</p>
-                        <input type="text" 
-                            name="userid" 
-                            placeholder="ID"
-                            value={userId}
-                            onChange={(e) => setUserId(e.target.value)}
-                        />
-                    </div>
+                <p className="s-title">아이디</p>
                 </div>
                 <div className="g-group">
-                    <div className="s-item">
-                        <p className="s-title">비밀번호</p>
-                        <input type="password" 
-                            name="userpw" 
-                            placeholder="PASSWORD"
-                            value={userPw}
-                            onChange={(e) => setUserPw(e.target.value)}
-                        />
-                    </div>
+                    <input className="c-input"
+                        type="text" 
+                        name="userid" 
+                        placeholder="ID"
+                        value={userId}
+                        onChange={(e) => setUserId(e.target.value)}
+                    />
+                </div>
+                <div className="g-group">
+                    <p className="s-title">비밀번호</p>
+                </div>
+                <div className="g-group">
+                    <input className="c-input"
+                        type="password" 
+                        name="userpw" 
+                        placeholder="PASSWORD"
+                        value={userPw}
+                        onChange={(e) => setUserPw(e.target.value)}
+                    />
                 </div>
                 <div className="g-group">
                     <div className="s-item">

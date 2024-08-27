@@ -1,19 +1,19 @@
 import React from "react";
+
+import imgSample from '../image/곰돌이2.png';  // 임시 프로필 이미지
 import '../css/Common.css';
 import '../css/Style.css';
-import Calendar from "../component/Calendar";
 
-function Schedule() {
+function MyPage() {    
     return (
         <div className="c-content">
             <div className="g-container">
                 <div className="c-title">
-                    일정
+                    마이페이지
                 </div>
-                <Calendar />
             </div>
         </div>
     );
 }
 
-export default Schedule;
+export default MyPage;

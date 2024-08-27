@@ -41,16 +41,16 @@ function SingUp() {
             const response = await fetch(`http://localhost:5000/userIdChk?userid=${formData.userid}`);
             const data = await response.json();
 
-            if (data.exists) {
-              setIsDuplicate(true);
-              setMessage('아이디가 이미 존재합니다.');
-            } else {
-              setIsDuplicate(false);
-              setMessage('사용 가능한 아이디입니다.');
-            }
+            // if (data.exists) {
+            //   setIsDuplicate(true);
+            //   setMessage('아이디가 이미 존재합니다.');
+            // } else {
+            //   setIsDuplicate(false);
+            //   setMessage('사용 가능한 아이디입니다.');
+            // }
         } catch (error) {
             console.error('Error checking username:', error);
-            setMessage('오류가 발생했습니다. 나중에 다시 시도하세요.');
+            // setMessage('오류가 발생했습니다. 나중에 다시 시도하세요.');
         }
     };
 
@@ -86,15 +86,13 @@ function SingUp() {
     return (
         <div className="c-content">
             <form onSubmit={C_01} className="s-group">
-                <div className="c-item">
-                    <h1>회원가입</h1>
+                <h1>회원가입</h1>
+                <div className="g-group">
+                    <p className={`s-title s-caution`}>아이디</p>
                 </div>
                 <div className="g-group">
-                    <div className="c-item">
-                        <p className={`s-title s-caution`}>아이디</p>
-                    </div>
-                    <div className="c-item">
-                        <input className={`c-input g-w70`} type="text"
+                    <div className="s-item">
+                        <input className="c-input" type="text"
                             name="userid"
                             placeholder="아이디 입력(6~20자)"
                             value={formData.userid}
@@ -104,10 +102,10 @@ function SingUp() {
                     </div>
                 </div>
                 <div className="g-group">
-                    <div className="c-item">
-                        <p className={`s-title s-caution`}>비밀번호</p>
-                    </div>
-                    <div className="c-item">
+                    <p className={`s-title s-caution`}>비밀번호</p>
+                </div>
+                <div className="g-group">
+                    <div className="s-item">
                         <input className="c-input"
                             type="password"
                             name="userpw"
@@ -118,10 +116,10 @@ function SingUp() {
                     </div>
                 </div>
                 <div className="g-group">
-                    <div className="c-item">
-                        <p className={`s-title s-caution`}>비밀번호 확인</p>
-                    </div>
-                    <div className="c-item">
+                    <p className={`s-title s-caution`}>비밀번호 확인</p>
+                </div>
+                <div className="g-group">
+                    <div className="s-item">
                         <input className="c-input"
                             type="password"
                             name="confirm_pw"
@@ -132,10 +130,10 @@ function SingUp() {
                     </div>
                 </div>
                 <div className="g-group">
-                    <div className="c-item">
-                        <p className={`s-title s-caution`}>이름</p>
-                    </div>
-                    <div className="c-item">
+                    <p className={`s-title s-caution`}>이름</p>
+                </div>
+                <div className="g-group">
+                    <div className="s-item">
                         <input className="c-input"
                             type="text"
                             name="username"
@@ -146,34 +144,32 @@ function SingUp() {
                     </div>
                 </div>
                 <div className="g-group">
-                    <div className="c-item">
-                        <p className={`s-title s-caution`}>이메일</p>
-                    </div>
-                    <div className="c-item">
-                        <div className="s-email">
-                            <input className={`c-input g-w40`}
-                                type="email"
-                                name="useremail"
-                                placeholder="이메일 주소"
-                                value={formData.useremail}
-                                onChange={onChange}
-                            />
-                            <p className="s-text">@</p>
-                            <select className={`s-select s-select-email`}>
-                                <option value=""></option>
-                                <option value="naver.com">naver.com</option>
-                                <option value="gmail.com">gmail.com</option>
-                            </select>
-                        </div>
+                    <p className={`s-title s-caution`}>이메일</p>
+                </div>
+                <div className="g-group">
+                    <div className="s-item">
+                        <input className="c-input" 
+                            type="email"
+                            name="useremail"
+                            placeholder="이메일 주소"
+                            value={formData.useremail}
+                            onChange={onChange}
+                        />
+                        <p className="s-text">@</p>
+                        <select className="c-select">
+                            <option value=""></option>
+                            <option value="naver.com">naver.com</option>
+                            <option value="gmail.com">gmail.com</option>
+                        </select>
                     </div>
                 </div>
                 <div className="g-group">
                     <p className={`s-title s-caution`}>생년월일</p>
-                    <BirthDate />
                 </div>
                 <div className="g-group">
-                    <button type="submit" className="btn">회원가입</button>
+                    <BirthDate />
                 </div>
+                <button type="submit" className="btn">회원가입</button>
             </form>
         </div>
     );

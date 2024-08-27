@@ -10,7 +10,7 @@ app.use(cors());
 app.use(express.json());
 
 // MongoDB 연결 설정
-const mongoURI = "mongodb+srv://admin:<password>@seanu.wqu82.mongodb.net/?retryWrites=true&w=majority&appName=seanu"; // 실제 MongoDB URI로 대체하세요
+const mongoURI = "mongodb+srv://admin:admin@seanu.wqu82.mongodb.net/?retryWrites=true&w=majority&appName=seanu"; // 실제 MongoDB URI로 대체하세요
 
 mongoose.connect(mongoURI, {
   useNewUrlParser: true,
@@ -89,6 +89,10 @@ app.post('/login', async (req, res) => {
   } catch (err) {
     res.status(500).json({ message: '서버 오류' });
   }
+});
+
+app.get('/notice', async (req, res) => {
+  
 });
 
 // 서버 실행

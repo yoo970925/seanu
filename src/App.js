@@ -9,6 +9,7 @@ import Schedule from './common/view/Schedule';
 import Notice from './common/view/Notice';
 import Header from './common/view/Header';
 import Nav from './common/view/Nav';
+import MyPage from './common/view/MyPage';
 
 function App() {
   const [selectedItem, setSelectedItem] = useState('default');
@@ -24,10 +25,11 @@ function App() {
       <Nav onSelectItem={handleSidebarSelection} />
       <Routes>
         <Route path="/" element={<Main />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/singup" element={<SingUp />} />
-        <Route path="/schedule" element={<Schedule />} />
-        <Route path="/notice" element={<Notice />} />
+        <Route path="/Login" element={<Login />} />
+        <Route path="/MyPage" element={<MyPage />} />
+        <Route path="/Singup" element={<SingUp />} />
+        <Route path="/Schedule" element={<Schedule />} />
+        <Route path="/Notice" element={<Notice />} />
       </Routes>
     </div>
     </BrowserRouter>

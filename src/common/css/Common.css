@@ -82,18 +82,16 @@
 }
 
 .g-container {
-    display: flex;
-    flex: 1;
-    padding: 5px;
-}
-
-.g-group {
-    margin-top: 10px;
     width: 100%;
     flex: 1;
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
+}
+
+.g-group {
+    display: flex;
+    align-items: center;
 }
 
 .c-title {
@@ -115,6 +113,7 @@
     overflow-x: auto;
     font-size: 15px;
     margin: 5px;
+    min-width: 500px;
 }
 
 table {
@@ -141,6 +140,7 @@ td { border: 1px solid rgba(0,0,0,.1);}
 }
 
 .btn { 
+    min-width: 100px;
     margin: 5px;
     padding: 5px;
     font-family: "LeeSeoyun";
@@ -160,6 +160,10 @@ td { border: 1px solid rgba(0,0,0,.1);}
     font-family: 'LeeSeoyun';
 }
 
+.c-select {
+    width: 100%;
+}
+
 select {
     font-family: 'LeeSeoyun';
     height: 25px;
@@ -177,6 +181,7 @@ select {
 }
 
 .s-title {
+    display: table-cell;
     width: 100%;
     height: 25px;
     margin: 5px 0;
@@ -199,4 +204,61 @@ select {
     margin: 0 5px;
 }
 
-.s-select-email, .s-select-birth { width: 100%; }
+/* 캘린더 */
+.cal-ul {
+    list-style-type: none;
+}
+
+.g-month {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.g-month ul {
+    margin: 0;
+    padding: 0;
+}
+
+.g-month ul li {
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.g-month .cal-prev {
+    float: left;
+    cursor: pointer;
+}
+
+.g-month .cal-next {
+    float: right;
+    cursor: pointer;
+}
+
+.g-weeks, .g-days {
+    margin: 0;
+    padding: 10px 0;
+}
+
+.g-weeks li {
+    display: inline-block;
+    width: 13.6%;
+    text-align: center;
+}
+
+.g-days li {
+    display: inline-block;
+    width: 13.6%;
+    height: 80px;
+    text-align: center;
+}
+
+.next-month {
+    color: #c4c4c4;
+}
+
+.g-img {
+    /* display: flex; */
+    justify-content: center;
+}

@@ -23,22 +23,22 @@ function BirthDate() {
     
     return (
         <div className="g-group">
-            <div className="c-item">
-                <select className="s-select-birth" onChange={year_onChange} value={selectedYear}>
+            <div className="s-item">
+                <select className="c-select" onChange={year_onChange} value={selectedYear}>
                     {Array.from({ length: new Date().getFullYear() - 1899 }, (_, i) => new Date().getFullYear() - i).map(year => (
                         <option key={year} value={year}>{year}</option>
                     ))}
                 </select>
                 <p className="s-text s-text-right">년도</p>
             </div>
-            <div className="c-item">
-                <select className="s-select-birth" onChange={month_onChange} value={selectedMonth}>
+            <div className="s-item">
+                <select className="c-select" onChange={month_onChange} value={selectedMonth}>
                     {Array.from({ length: 12 }, (_, i) => i + 1).map(month => (
                         <option key={month} value={month}>{month}</option>
                     ))}
                 </select>
                 <p className="s-text s-text-right">월</p>
-                <select className="s-select-birth">
+                <select className="c-select">
                     {days.map(day => (
                         <option key={day} value={day}>{day}</option>
                     ))}
