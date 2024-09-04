@@ -29,7 +29,7 @@ function BirthDate() {
                         <option key={year} value={year}>{year}</option>
                     ))}
                 </select>
-                <p className="s-text s-text-right">년도</p>
+                <p className={`s-text s-text-right`}>년도</p>
             </div>
             <div className="s-item">
                 <select className="c-select" onChange={month_onChange} value={selectedMonth}>
@@ -37,13 +37,13 @@ function BirthDate() {
                         <option key={month} value={month}>{month}</option>
                     ))}
                 </select>
-                <p className="s-text s-text-right">월</p>
+                <p className={`s-text s-text-right`}>월</p>
                 <select className="c-select">
                     {days.map(day => (
                         <option key={day} value={day}>{day}</option>
                     ))}
                 </select>
-                <p className="s-text s-text-right">일</p>
+                <p className={`s-text s-text-right`}>일</p>
             </div>
         </div>
     );

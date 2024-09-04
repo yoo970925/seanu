@@ -5,7 +5,7 @@ import './common/css/App.css';
 import Main from './common/view/Main';
 import Login from './common/view/Login';
 import SingUp from './common/view/SingUp';
-import Schedule from './common/view/Schedule';
+import Calendar from './common/view/Calendar';
 import Notice from './common/view/Notice';
 import Header from './common/view/Header';
 import Nav from './common/view/Nav';
@@ -28,7 +28,7 @@ function App() {
         <Route path="/Login" element={<Login />} />
         <Route path="/MyPage" element={<MyPage />} />
         <Route path="/Singup" element={<SingUp />} />
-        <Route path="/Schedule" element={<Schedule />} />
+        <Route path="/Calendar" element={<Calendar />} />
         <Route path="/Notice" element={<Notice />} />
       </Routes>
     </div>

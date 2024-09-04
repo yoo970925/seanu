@@ -202,60 +202,48 @@ select {
 
 .s-text-email {
     margin: 0 5px;
-}
+};
 
 /* 캘린더 */
-.cal-ul {
-    list-style-type: none;
+.g-cal {
+    width: 100%;
+    margin: 0 auto;
 }
 
-.g-month {
-    padding: 50px 20px;
+.g-cal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cal-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    background-color: #f7f7f7;
+}
+
+.cal-day-name, .cal-day {
     text-align: center;
+    padding: 20px;
+    margin: 2px;
+    font-family: 'LeeSeoyun';
 }
 
-.g-month ul {
-    margin: 0;
-    padding: 0;
-}
-
-.g-month ul li {
-    color: white;
-    font-size: 20px;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-}
-
-.g-month .cal-prev {
-    float: left;
+.cal-day {
+    background-color: #ffffff;
     cursor: pointer;
 }
 
-.g-month .cal-next {
-    float: right;
-    cursor: pointer;
+.cal-day.empty {
+    background-color: #f9f9f9;
 }
 
-.g-weeks, .g-days {
-    margin: 0;
-    padding: 10px 0;
-}
+.saturday { color: blue; }
+.sunday { color: red; }
 
-.g-weeks li {
-    display: inline-block;
-    width: 13.6%;
+.selected-date {
+    margin-top: 20px;
     text-align: center;
-}
-
-.g-days li {
-    display: inline-block;
-    width: 13.6%;
-    height: 80px;
-    text-align: center;
-}
-
-.next-month {
-    color: #c4c4c4;
 }
 
 .g-img {

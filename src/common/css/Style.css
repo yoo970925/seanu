@@ -89,28 +89,28 @@
 }
 
 /* 달력 색상 */
-.App.default .g-month {
+.App.default .g-cal-header {
     background-color: #C8ACD6;
 }
 
-.App.dark .g-month {
+.App.dark .g-cal-header {
     background-color: #696969;
 }
 
-.App.default .g-weeks {
+.App.default .cal-day-name {
     background-color: #f8e9ff;
 }
 
-.App.dark .g-weeks {
+.App.dark .cal-day-name {
     background-color: #b9b9b9;
 }
 
-.App.default .g-days .active {
+.App.default .cal-day.selected {
     background: #8a649c;
     color: white !important
 }
 
-.App.dark .g-days .active {
+.App.dark .cal-day.selected {
     background: #282e2d;
     color: white !important
 }
